@@ -113,7 +113,9 @@
     .nav-links a:hover {
       color: var(--green-900);
     }
-
+    .nav-links a.btn-primary {
+      color: var(--white);
+    }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -265,34 +267,33 @@
     .hero-proof {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      justify-content: flex-start;
+      gap: 2rem;
       padding-top: 2rem;
       border-top: 1px solid rgba(27, 67, 50, 0.1);
+      flex-wrap: wrap;
     }
 
-    .hero-proof span {
+    .hero-proof > span {
       font-size: 0.85rem;
       color: var(--text-muted);
     }
 
     .data-logos {
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
       align-items: center;
     }
 
-    .data-logos img {
-      height: 20px;
-      opacity: 0.5;
-      filter: grayscale(1);
-    }
-
     .data-logo {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      letter-spacing: 0.02em;
+      padding: 0.4rem 0.75rem;
+      background: rgba(27, 67, 50, 0.08);
+      border-radius: 4px;
     }
 
     /* Hero Visual */
@@ -634,11 +635,13 @@
     }
 
     .acknowledgment h2 {
+      font-family: 'Fraunces', serif;
       font-size: 2rem;
       margin-bottom: 1.5rem;
       font-style: italic;
       font-weight: 400;
       line-height: 1.4;
+      color: var(--white);
     }
 
     .acknowledgment p {
@@ -1401,13 +1404,13 @@
     <div class="hero-content">
       <div class="hero-text">
         <div class="hero-badge">Early Decision deadlines are 9 months away</div>
-        <h1>Stop Guessing.<br>Turn Your College List Into a <span>Plan You Can Trust</span></h1>
+        <h1>Stop Guessing. Turn Your College List<br>Into a <span>Plan You Can Trust</span></h1>
         <p class="hero-subtitle">Right now, you're probably wondering if your list is balanced, if those "safeties" are actually safe, and whether you're making the right calls. We built CollegeStack to answer those questions.</p>
         <div class="hero-ctas">
           <a href="#" class="btn btn-primary">Start your plan →</a>
           <a href="#" class="btn btn-secondary">See how it works</a>
         </div>
-        <div class="hero-proof" style="justify-content: center;">
+        <div class="hero-proof">
           <span>Built on official admissions data from</span>
           <div class="data-logos">
             <span class="data-logo">IPEDS</span>
@@ -1847,7 +1850,7 @@
       </div>
       <div class="footer-bottom">
         <p class="footer-disclaimer">CollegeStack provides decision-support tools based on publicly available admissions data. Admissions decisions are made by each institution independently. This tool is for educational planning purposes only.</p>
-        <span>© 2024 CollegeStack. All rights reserved.</span>
+        <span>© 2026 CollegeStack. All rights reserved.</span>
       </div>
     </div>
   </footer>
