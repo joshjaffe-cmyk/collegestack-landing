@@ -265,36 +265,53 @@
     }
 
     .hero-proof {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 2rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(27, 67, 50, 0.1);
-      flex-wrap: wrap;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(27, 67, 50, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .hero-proof > span {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    .data-logos {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
+    .hero-proof > span:first-child {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 
     .data-logo {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--text-secondary);
-      letter-spacing: 0.02em;
-      padding: 0.4rem 0.75rem;
-      background: rgba(27, 67, 50, 0.08);
-      border-radius: 4px;
-    }
+  font-size: 1rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+    .data-logo.ipeds {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+}
+
+    .data-logo.scorecard {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.data-logo.cds {
+  font-family: 'Fraunces', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
 
     /* Hero Visual */
     .hero-visual {
@@ -1410,14 +1427,6 @@
           <a href="#" class="btn btn-primary">Start your plan →</a>
           <a href="#" class="btn btn-secondary">See how it works</a>
         </div>
-        <div class="hero-proof">
-          <span>Built on official admissions data from</span>
-          <div class="data-logos">
-            <span class="data-logo">IPEDS</span>
-            <span class="data-logo">College Scorecard</span>
-            <span class="data-logo">Common Data Set</span>
-          </div>
-        </div>
       </div>
       <div class="hero-visual">
         <div class="floating-insight top-right">
@@ -1472,6 +1481,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="hero-proof">
+      <span>GROUNDED IN OFFICIAL ADMISSIONS DATA FROM</span>
+      <span class="data-logo ipeds">IPEDS</span>
+      <span class="data-logo scorecard">COLLEGE SCORECARD</span>
+      <span class="data-logo cds">Common Data Set</span>
     </div>
   </section>
 
@@ -1850,7 +1865,7 @@
       </div>
       <div class="footer-bottom">
         <p class="footer-disclaimer">CollegeStack provides decision-support tools based on publicly available admissions data. Admissions decisions are made by each institution independently. This tool is for educational planning purposes only.</p>
-        <span>© 2025 CollegeStack. All rights reserved.</span>
+        <span>© 2026 CollegeStack. All rights reserved.</span>
       </div>
     </div>
   </footer>
